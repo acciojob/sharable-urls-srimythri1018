@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
   <body>
+	  <lable for="name">Name:</lable></br>
+	  <input type="text" id="name"><br></br>
+	  <lable for="year">Graduation year:</lable></br>
+	  <input type="datetime" id="year"><br>
+  </br><button type="submit" onclick="myFunction()" id="button">Submit</button>
+	  <h3 id="url">https://localhost:8080/</h3>
     <script type="text/javascript" src="./script.js">
+		function myFunction()
+			{
+				let name=getElementById("name");
+				let year=getElementById("year");
+				document.getElementById("url").innerHTML="https://localhost:8080"+"?Name="+name+"&"+year;
+			}
 </script>
   </body>
 
