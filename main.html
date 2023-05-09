@@ -10,9 +10,12 @@
     <script type="text/javascript" src="./script.js">
 		function myFunction()
 			{
-				let name=getElementById("name");
-				let year=getElementById("year");
-				document.getElementById("url").innerHTML="https://localhost:8080"+"?Name="+name+"&"+year;
+				let name=getElementById("name").value;
+				let year=getElementById("year").value;
+				var queryString = "?";
+                 queryString += "name=" + encodeURIComponent(name);
+                 queryString += "&year=" + encodeURIComponent(year);
+				 document.getElementById("url").textContent = "https://localhost:8080/" + queryString;
 			}
 </script>
   </body>
