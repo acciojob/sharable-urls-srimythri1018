@@ -1,5 +1,5 @@
 // your code here
-function myFunction()
+function updateUrl()()
 			{
 				var name=getElementById("name").value;
 				var year=getElementById("year").value;
