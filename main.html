@@ -2,21 +2,13 @@
 <html>
   <body>
 	  <lable for="name">Name:</lable></br>
-	  <input type="text" id="name"><br></br>
+	  <input type="text" id="name" name="name"><br></br>
 	  <lable for="year">Graduation year:</lable></br>
-	  <input type="datetime" id="year"><br>
+	  <input type="number" id="year" name="year"><br>
   </br><button type="submit" onclick="myFunction()" id="button">Submit</button>
 	  <h3 id="url">https://localhost:8080/</h3>
     <script type="text/javascript" src="./script.js">
-		function myFunction()
-			{
-				let name=getElementById("name").value;
-				let year=getElementById("year").value;
-				var queryString = "?";
-                 queryString += "name=" + encodeURIComponent(name);
-                 queryString += "&year=" + encodeURIComponent(year);
-				 document.getElementById("url").textContent = "https://localhost:8080/" + queryString;
-			}
+		
 </script>
   </body>
 
