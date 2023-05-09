@@ -1,8 +1,8 @@
 // your code here
 function myFunction()
 			{
-				let name=getElementById("name").value;
-				let year=getElementById("year").value;
+				var name=getElementById("name").value;
+				var year=getElementById("year").value;
 				var queryString = "?";
                  queryString += "name=" + encodeURIComponent(name);
                  queryString += "&year=" + encodeURIComponent(year);
